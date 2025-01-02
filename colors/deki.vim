@@ -79,5 +79,18 @@ if exists('g:deki_plus')
     hi dekiSeparator guibg=#2a2a30 
     hi dekiBuns guifg=#ffff00 cterm=bold
     hi EndOfBuffer guifg=#101014
+    hi IndentGuidesOdd guibg=#121218
+    hi IndentGuidesEven guibg=#121218
+    
+    set fillchars+=vert:\▏
+    hi VertSplit guifg=#000000
+
+    au ColorScheme,VimEnter
+    \ * hi minimapBase guifg=#30303a
+    \ | hi minimapCursor guibg=#2a2a30 cterm=bold 
+    \                    guifg=#6a6a7a
+    \ | hi minimapRange guibg=#16161b 
+    \                   guifg=#4a4a50
 endif
+
 
