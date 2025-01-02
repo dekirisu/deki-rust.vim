@@ -68,3 +68,16 @@ hi rsDerive guifg=#2d93d3 cterm=bold
 " String
 hi rsString guifg=#00a884
 hi! link rsQuote rsString
+
+if exists('g:deki_plus')
+    hi! link dekiMaflow ControlFlow
+    hi dekiAllow guifg=#fdd932
+    hi dekiFeature guifg=#e78a0b
+    hi dekiExt guifg=#eb4a8e cterm=bold
+    hi dekiSeparator guifg=#000000 guibg=#404040 cterm=bold
+    hi! link dekiHex Macro
+    hi dekiSeparator guibg=#2a2a30 
+    hi dekiBuns guifg=#ffff00 cterm=bold
+    hi EndOfBuffer guifg=#101014
+endif
+

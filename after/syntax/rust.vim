@@ -461,3 +461,19 @@ highlight default link rsUserType Type
 " Account for the vast majority of colourschemes not highlighting string
 " delimiters explicitly.
 highlight default link StringDelimiter String
+
+if exists('g:deki_plus')
+    syn match dekiMaflow /\(exit!\|kill!\|hold!\|next!\)/
+    syn match dekiDerive /\(#\[hashable.*\]\|#\[serde.*\]\|#\[ext.*\]\|#\[new.*\]\)/
+    syn match dekiSeparator /\/\/.*\\\\/
+    syn match dekiExt /\(bycell!\|tycell!\)/
+    syn match dekiBuns /\^/
+    syn match dekiBuns /#[^\[]/me=e-1
+    syn match dekiBuns /\^[0-9][^0-9]/me=e-1
+    syn match dekiHex /#[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]/
+    syn match dekiHex /#[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]/
+    syn match dekiHex /#[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]/
+    syn match dekiHex /#[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]/
+    syn match dekiAllow /\#!\[allow.*\]/
+    syn match dekiFeature /\#!\[feature.*\]/
+endif
